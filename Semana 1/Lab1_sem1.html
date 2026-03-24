@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 1</title>
+</head>
+<body>
+
+<header>
+    <h1>Introducción a las aplicaciones web, HTML5 y ciclo de vida de los sistemas de información</h1>
+</header>
+
+<nav>
+    <h2>Menú de navegación</h2>
+    <ul>
+        <li><a href="#datos">Datos personales</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#cita">Cita favorita</a></li>
+        <li><a href="#foto">Fotografía</a></li>
+        <li><a href="#controles">Controles básicos</a></li>
+        <li><a href="#preguntas">Preguntas y respuestas</a></li>
+        <li><a href="#referencias">Referencias</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="datos">
+        <h2>Datos personales</h2>
+        <ul>
+            <li><strong>Nombre:</strong> Jorge Nieto</li>
+            <li><strong>Matrícula:</strong> A01711060</li>
+            <li><strong>Correo electrónico:</strong> A01711060@tec.mx</li>
+        </ul>
+    </section>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Mi nombre es Jorge Nieto, vivo en Querétaro y soy estudiante de la carrera de Ingeniería en Tecnologías Computacionales. Actualmente estoy en <strong>4.º semestre</strong>.</p>
+    </section>
+
+    <section id="cita">
+        <h2>Mi cita favorita</h2>
+        <blockquote>
+            <p>Todo aquello que te lastima, encuentra una manera de superarlo. Todo aquello que sientes que es difícil para ti, encuentra la forma de hacerlo de todos modos. No puedes ver la luz adecuada si nunca has pasado por momentos muy, muy oscuros.</p>
+            <cite>Shi Heng Yi, Maestro Shaolin</cite>
+        </blockquote>
+    </section>
+
+    <section id="foto">
+        <h2>Fotografía</h2>
+        <figure>
+            <img src="https://media.cleanshot.cloud/media/83749/Be0GSXGEwB0XcyvdzhLScgVpomY4GmDhjCwmWqgN.jpeg?Expires=1774413154&Signature=IRkXRZD8iKJI0k539YBZzS6Ww7n7z0tBJ0d6tGzd3AvE6AJUXlPoR~9bqNekSqxhYPeOGU~1NOLR-c57bORIlyimSVtflPdVv9AjuGBbc1s6UJvYdmpXcnOSWkz8eJgUpRvRfmtR2r6M0-wqkyOnIeeqkvwKzqo~WkZNlmHwjxlY3Lrp3EBeefycbDu6fbfDSRdErCWUjKitEJ5AJf9z~4AHyFefW~44qYRq1kiy8JbaTGNy87WflCYAeQ6EBdwWE2LcAB9uMKqv1lFsAuL3QFn1i8OwTINnhy2Qz1c56ncd-S44tNyg5FGWc4gaU7utBlqGoZQVuTbr5CyY-sBasQ__&Key-Pair-Id=K269JMAT9ZF4GZ" alt="Tres rascacielos al atardecer en Guadalajara" width="400">
+            <figcaption>Una fotografía de un edificio en Guadalajara al atardecer.</figcaption>
+        </figure>
+    </section>
+
+
+    <section id="controles">
+        <h2>Controles básicos de HTML</h2>
+        <p>En esta sección se muestran algunos controles básicos utilizados en HTML5.</p>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Ejemplo de controles</legend>
+
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </p>
+
+                <p>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo">
+                </p>
+
+                <p>
+                    <label for="semestre">Semestre:</label>
+                    <input type="number" id="semestre" name="semestre" min="1" max="12">
+                </p>
+
+                <p>
+                    <label for="tema">Tema favorito:</label>
+                    <select id="tema" name="tema">
+                        <option value="html">HTML</option>
+                        <option value="web">Desarrollo web</option>
+                        <option value="software">Ingeniería de software</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="comentario">Comentario:</label><br>
+                    <textarea id="comentario" name="comentario" rows="4" cols="30"></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="interesado" name="interesado">
+                    <label for="interesado">Me interesa el desarrollo web</label>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </p>
+            </fieldset>
+        </form>
+    </section>
+
+    <section id="preguntas">
+        <h2>Preguntas y respuestas</h2>
+
+        <article>
+            <h3>¿Cuál es la diferencia entre Internet y la World Wide Web?</h3>
+            <p><strong>Internet</strong> es la infraestructura: una red global de computadoras interconectadas que permite la comunicación entre dispositivos.</p>
+            <p>La <strong>World Wide Web (WWW)</strong> es un servicio que funciona sobre Internet y consiste en páginas web interconectadas mediante hipervínculos.</p>
+            <p>En otras palabras, <strong>Internet es la red; la Web es uno de los servicios que usamos dentro de esa red</strong>.</p>
+        </article>
+
+        <article>
+            <h3>¿Cuáles son las partes de un URL?</h3>
+            <p>Un URL se compone de varias partes que identifican y localizan un recurso:</p>
+            <ul>
+                <li><strong>Protocolo:</strong> indica cómo se comunican los datos, por ejemplo <code>http</code> o <code>https</code>.</li>
+                <li><strong>Dominio:</strong> nombre del servidor, por ejemplo <code>google.com</code>.</li>
+                <li><strong>Puerto:</strong> canal de comunicación, como <code>80</code> para HTTP o <code>443</code> para HTTPS.</li>
+                <li><strong>Ruta:</strong> recurso solicitado, por ejemplo <code>/login</code>.</li>
+                <li><strong>Query string:</strong> parámetros adicionales, por ejemplo <code>?id=10&amp;user=juan</code>.</li>
+                <li><strong>Fragmento:</strong> referencia interna en el documento, por ejemplo <code>#seccion</code>, que no se envía al servidor.</li>
+            </ul>
+            <p>Cada parte cumple una función específica para ubicar y acceder al recurso solicitado.</p>
+        </article>
+
+        <article>
+            <h3>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH y DELETE?</h3>
+            <p>Los métodos HTTP indican qué acción desea realizar el cliente sobre un recurso en el servidor.</p>
+            <ul>
+                <li><strong>GET:</strong> obtener datos sin modificarlos.</li>
+                <li><strong>HEAD:</strong> igual que GET, pero sin devolver el contenido del recurso.</li>
+                <li><strong>POST:</strong> enviar datos o crear un recurso.</li>
+                <li><strong>PUT:</strong> reemplazar completamente un recurso.</li>
+                <li><strong>PATCH:</strong> modificar parcialmente un recurso.</li>
+                <li><strong>DELETE:</strong> eliminar un recurso.</li>
+            </ul>
+            <p>Estos métodos son fundamentales para definir operaciones en aplicaciones web y APIs.</p>
+        </article>
+
+        <article>
+            <h3>¿Qué método HTTP se debe utilizar al enviar un formulario HTML?</h3>
+            <p>El método que normalmente se utiliza es <strong>POST</strong>. Esto se debe a que envía los datos en el cuerpo de la petición y no directamente en la URL.</p>
+            <p>También es más adecuado para datos sensibles, como usuarios o contraseñas, y permite enviar una mayor cantidad de información. Aun así, la seguridad real depende de utilizar <strong>HTTPS</strong>.</p>
+        </article>
+
+        <article>
+            <h3>¿Qué método HTTP se utiliza cuando se accede a una página mediante un URL?</h3>
+            <p>Se utiliza el método <strong>GET</strong>, porque el navegador solicita obtener un recurso sin modificarlo.</p>
+        </article>
+
+        <article>
+            <h3>¿Qué significa un código HTTP 200? ¿Ocurrió algún error?</h3>
+            <p>El código <strong>200 OK</strong> significa que la solicitud fue exitosa y que el servidor devolvió correctamente el recurso solicitado. <strong>No ocurrió ningún error</strong>.</p>
+            <p>Por lo general, los errores corresponden a códigos <strong>4xx</strong> o <strong>5xx</strong>.</p>
+        </article>
+
+        <article>
+            <h3>¿Es responsabilidad del desarrollador corregir un error 404?</h3>
+            <p><strong>Sí, generalmente sí.</strong> Un error <strong>404</strong> significa que el recurso no fue encontrado. Esto puede suceder por enlaces rotos, URLs mal definidas o recursos eliminados sin redirección.</p>
+            <p>En muchos casos, el desarrollador debe revisar la estructura del sitio y corregir esos enlaces o configurar redirecciones adecuadas.</p>
+        </article>
+
+        <article>
+            <h3>¿Es responsabilidad del desarrollador corregir un error 500?</h3>
+            <p><strong>Sí, totalmente.</strong> El error <strong>500</strong> indica un fallo interno del servidor. Generalmente está relacionado con problemas en el código backend, errores de lógica o una mala configuración del servidor.</p>
+        </article>
+
+        <article>
+            <h3>¿Qué significa que un atributo o elemento HTML5 esté desaprobado?</h3>
+            <p>Significa que <strong>ya no se recomienda su uso</strong>, porque ha sido sustituido por prácticas más modernas o porque podría eliminarse en futuras versiones del estándar.</p>
+            <p>Algunos ejemplos de elementos desaprobados de HTML 4 en HTML5 son:</p>
+            <ul>
+                <li><code>&lt;font&gt;</code></li>
+                <li><code>&lt;center&gt;</code></li>
+                <li><code>&lt;big&gt;</code></li>
+                <li><code>&lt;frameset&gt;</code></li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</h3>
+            <p><strong>HTML5</strong> introduce etiquetas semánticas como <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code> y <code>&lt;footer&gt;</code>; además, ofrece soporte multimedia nativo con <code>&lt;audio&gt;</code> y <code>&lt;video&gt;</code>, e incluye APIs modernas.</p>
+            <p><strong>HTML 4</strong> era menos semántico y dependía más de tecnologías externas, como plugins, para algunas funciones multimedia.</p>
+            <p>En general, HTML5 es más moderno, estructurado y adecuado para aplicaciones web actuales.</p>
+        </article>
+
+        <article>
+            <h3>¿Qué componentes de estructura y estilo tiene una tabla?</h3>
+            <p>En cuanto a la estructura, una tabla utiliza elementos como:</p>
+            <ul>
+                <li><code>&lt;table&gt;</code> para la tabla</li>
+                <li><code>&lt;tr&gt;</code> para las filas</li>
+                <li><code>&lt;td&gt;</code> para las celdas</li>
+                <li><code>&lt;th&gt;</code> para los encabezados</li>
+            </ul>
+            <p>El estilo visual de una tabla, como bordes, colores o tamaños, normalmente se aplica con <strong>CSS</strong>.</p>
+        </article>
+
+        <article>
+            <h3>¿Cuáles son los principales controles de una forma HTML5?</h3>
+            <p>Los principales controles de una forma HTML5 son:</p>
+            <ul>
+                <li><code>&lt;input&gt;</code> en sus diferentes tipos, como <code>text</code>, <code>email</code>, <code>password</code> y <code>number</code></li>
+                <li><code>&lt;textarea&gt;</code> para texto largo</li>
+                <li><code>&lt;select&gt;</code> para listas desplegables</li>
+                <li><code>&lt;button&gt;</code> para ejecutar acciones</li>
+                <li><code>&lt;label&gt;</code> para identificar campos</li>
+            </ul>
+            <p>Estos elementos permiten capturar y organizar la información que introduce el usuario.</p>
+        </article>
+
+        <article>
+            <h3>¿Qué tanto soporte HTML5 tiene el navegador que utilizo?</h3>
+            <p>El navegador que utilizo es <strong>Google Chrome</strong>. De acuerdo con la prueba realizada en <strong>html5test</strong>, tiene un soporte muy alto de <strong>526 de 555 puntos</strong>.</p>
+        </article>
+
+        <article>
+            <h3>¿Cuál es el ciclo de vida y el ciclo de desarrollo de los sistemas de información?</h3>
+            <p>El <strong>ciclo de vida de los sistemas de información</strong> incluye las etapas de:</p>
+            <ol>
+                <li>Planeación</li>
+                <li>Análisis</li>
+                <li>Diseño</li>
+                <li>Implementación</li>
+                <li>Mantenimiento</li>
+            </ol>
+
+            <p>Por otro lado, el <strong>ciclo de desarrollo de sistemas de información (SDLC)</strong> considera normalmente:</p>
+            <ol>
+                <li>Requisitos</li>
+                <li>Diseño</li>
+                <li>Desarrollo</li>
+                <li>Pruebas</li>
+                <li>Despliegue</li>
+                <li>Mantenimiento</li>
+            </ol>
+
+            <p>Ambos describen las etapas necesarias para crear, implementar y mantener sistemas desde la idea inicial hasta su operación continua.</p>
+        </article>
+    </section>
+
+    <section id="referencias">
+        <h2>Referencias</h2>
+        <ul>
+            <li>MDN Web Docs. <cite>HTTP request methods</cite>. Disponible en: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods" target="_blank" rel="noopener noreferrer">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods</a></li>
+            <li>MDN Web Docs. <cite>What is a URL?</cite>. Disponible en: <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL#basics_anatomy_of_a_url" target="_blank" rel="noopener noreferrer">https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL#basics_anatomy_of_a_url</a></li>
+            <li>Mozilla Developer Network. <cite>HTML elements reference</cite>. Disponible en: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements" target="_blank" rel="noopener noreferrer">https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements</a></li>
+            <li>HTML5 Test. <cite>HTML5 browser compatibility test</cite>. Disponible en: <a href="http://html5test.com/" target="_blank" rel="noopener noreferrer">http://html5test.com/</a></li>
+        </ul>
+    </section>
+
+    <aside>
+        <h2>Dato adicional</h2>
+        <p>Me interesa más el desarrollo de software que el diseño web.</p>
+    </aside>
+
+<footer>
+    <hr>
+    <p>Editor HTML utilizado: WebStorm</p>
+    <p><a href="https://www.jetbrains.com/webstorm/" target="_blank">Sitio oficial del editor</a></p>
+    <p>Documento validado con el servicio <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C Markup Validation Service</a>.</p></footer>
+</main>
+
+</body>
+</html>
